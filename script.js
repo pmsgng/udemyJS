@@ -53,4 +53,27 @@ switch (num) {
         break;
 }
 
+let number = 50;
 
+while (number < 55) {
+    console.log(number);
+    number++;
+} 
+
+do {
+    console.log(number);
+    number++;
+} while (number < 55);
+
+for (let i = 1; i < 8; i++) {
+    console.log(number);
+    number++;
+}
+
+for (let t = 1; t < 10; t++) {
+    if(t === 6) {
+        break;
+        // continue;      оператор не прерывает цикл,а пропускает число 6 в цикле
+    }
+    console.log(t);
+}
