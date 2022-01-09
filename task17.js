@@ -17,7 +17,7 @@ const logg = 'Hello world!';
 
 console.log(logg.slice(6, 12));  // world
 
-console.log(logg.substring()); // не поддерживает отрицательные значения! 
+console.log(logg.substring(6, 12)); // не поддерживает отрицательные значения! 
 
 console.log(logg.substr()); // устаревший метод 
 
