@@ -27,7 +27,7 @@ switch (num) {
     case 50:
         console.log('Ok!');
         break;
-    default:                                        //прописваем если нет верного ответа
+    default:                                        //прописываем если нет верного ответа
         console.log('Нет праивльного ответа');
         break;
 }
