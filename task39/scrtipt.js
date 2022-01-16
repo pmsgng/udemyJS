@@ -15,7 +15,7 @@ function myAnimation() {
     const id = setInterval(frame, 10);
     function frame() {
         if (pos === 300) {
-            clearInterval(id);
+            clearInterval(id);       
         } else {
             pos++;
             elem.style.top = pos + 'px';
