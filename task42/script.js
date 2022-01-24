@@ -24,3 +24,6 @@ const style = window.getComputedStyle(box);
 console.log(style.display);
 
 console.log(document.documentElement.scrollTop);
+
+// window.scrollBy(0, 400);  // скролл относительно текущего положения на странице 
+// window.scrollTo(0,400); скролл относительно всей страницы
