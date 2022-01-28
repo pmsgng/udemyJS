@@ -78,7 +78,7 @@ let obj = {
     }
 };
 
-obj.sayNumber();
+obj.sayNumber();  // = 5, вызов метода 
 
 // const double = (a) => {
 //     return a * 2;

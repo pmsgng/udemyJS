@@ -32,3 +32,4 @@ class ColoredRectangleWithText extends Rectangle {
 const div = new ColoredRectangleWithText(25,10,'Hi bro', 'red');
 
 div.showMyProps();
+console.log(div.calcArea());
