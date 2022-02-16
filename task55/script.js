@@ -128,6 +128,7 @@ prms().then((obj) => {
 });
 
 
+// задачка с learnJS
 
 function delay(ms) {
     // ваш код
@@ -144,3 +145,20 @@ function delay(ms) {
   }
   
   delay(2000).then(() => console.log('выполнилось через 3 секунды')).catch((text) => console.log(text));
+
+  const objj = {
+      a: 2,
+      b: {
+          c: 3,
+          d: {
+              e: 4,
+              f: 5,
+          }
+      }
+  };
+
+  const cloneObjj = JSON.stringify(objj);
+
+//   cloneObjj.b.d.f = 4;
+
+  console.log(objj, cloneObjj);
