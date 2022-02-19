@@ -59,6 +59,14 @@
 // console.log(double(3));
 // console.log(double(5));
 
+// function double(num) {
+//     console.log(this)
+//     return this.num * num;
+// }
+
+// const double2 = double.bind({num: 2, age: '10'});
+// console.log(double2(3));
+
 //!!! 4) ручная привязка this -  call,apply,bind
 
 const btn = document.querySelector('button');
@@ -84,4 +92,4 @@ obj.sayNumber();  // = 5, вызов метода
 //     return a * 2;
 // };
 
-const double = a => a * 2;
+const double2 = a => a * 2;
