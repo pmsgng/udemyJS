@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+}
+.block {
+    position: relative;
+    margin: 0 auto;
+    height: 3rem;
+    width: 20rem;
+    border: 0.01rem solid orange;
+    background-color: aliceblue;
+}
+.block__item {
+    position: absolute;
+    height: 3rem;
+    width: 3rem;
+    border: 1px solid black;
+    background-color: gray;
+}
