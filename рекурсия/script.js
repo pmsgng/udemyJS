@@ -43,3 +43,8 @@ item.addEventListener('click', () => {
     animRec();
 });
 
+function fib(n) {
+    return n <= 1 ? n : fib(n - 2) + fib(n - 1);
+}
+console.log(fib(6));
+
