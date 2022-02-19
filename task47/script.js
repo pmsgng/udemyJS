@@ -10,6 +10,10 @@ class Rectangle {
         return this.height * this.width;
     }
 }
+const square = new Rectangle(10,10);
+console.log(square.calcArea()); //100
+const newRec = new Rectangle(30,10);
+console.log(newRec.calcArea()); //300
 
 class ColoredRectangleWithText extends Rectangle {
     constructor(height, width, text, bgColor) {

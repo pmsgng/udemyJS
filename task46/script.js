@@ -59,6 +59,8 @@
 // console.log(double(3));
 // console.log(double(5));
 
+// ---------
+
 // function double(num) {
 //     console.log(this)
 //     return this.num * num;
