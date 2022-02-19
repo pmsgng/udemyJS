@@ -48,3 +48,25 @@ function fib(n) {
 }
 console.log(fib(6));
 
+// ==================== замыкание с рекурсией колличество монет у попрошайки 
+
+function randomIntegr(min,max) {
+    let rand = min - 0.5 + Math.random() * (max - min + 1);
+    return Math.round(rand);
+}
+
+function createSumBeggarCoin(counter = 0) {
+    let n = counter;
+    return function sumBeggarCoin() {
+        n += randomIntegr(0,100); 
+        console.log(n);
+        if (n >= 250) return;
+        sumBeggarCoin();
+    }
+}
+let beggar = createSumBeggarCoin();
+let beggar2 = createSumBeggarCoin(200)
+
+beggar();
+console.log('---------------');
+beggar2();
