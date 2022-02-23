@@ -111,3 +111,79 @@ function smash (words) {
   function even_or_odd(number) {
     return number % 2 === 0 ? 'Even' : 'Odd';
 }
+
+//================
+
+function betterThanAverage(classPoints, yourPoints) {
+    // Your code here
+    let mediumClassPoint = classPoints.reduce((sum,current) => {
+        return sum + current;
+    }) / classPoints.length;    // среднее арифметичсекое всех оценок класса разделить на длину массива, 
+                                // получаем среднюю оценку класса
+
+    return yourPoints > mediumClassPoint ?  true : false ;
+  }
+  
+  //===============
+
+  function opposite(number) {
+    //your code here
+   return -number;
+  }
+
+  //===============
+
+  function sumMix(x){
+   let newArr = x.map( item => +item);
+   let sumArr = newArr.reduce((sum,item) => sum + item);
+    return sumArr;
+}
+
+//===========
+const reverseSeq = n => {
+    let newArr = [];
+    for(let i = 1; i<=n; i++) {
+        newArr.push(i);
+    }
+    let reverseArr = newArr.reverse();
+    return reverseArr;
+  };
+
+  console.log(reverseSeq(5));
+
+  //=============
+  let summation = function (num) {
+    // Code here
+    let arr = [];
+    for(let i = 1; i <= num; i++) {
+        arr.push(i);
+    }
+    let sumArr = arr.reduce((sum,item) => sum + item);
+    return sumArr;
+  };
+
+  console.log(summation(10));
+
+//===================
+
+  function sortArray(array) {
+    // Return a sorted array.
+    const odd = array.filter(num => num % 2 !== 0).sort();
+    console.log(`${odd} - отфильтрованный массив нечетных чисел`);
+    let i = 0; //счетчик для перебора
+    const newArr = [];
+
+    array.forEach(item => {
+        if(item % 2 === 0) {
+           newArr.push(item);
+           console.log(newArr);
+        } else {
+            newArr.push(odd[i]);
+            i++;
+            console.log(newArr);
+        }
+    });
+    return newArr;
+  }
+
+  console.log(sortArray([9, 8, 7, 6, 5, 4, 3, 2, 1, 0]));
